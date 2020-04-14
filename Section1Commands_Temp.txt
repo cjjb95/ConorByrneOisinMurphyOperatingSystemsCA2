@@ -1,4 +1,5 @@
 Task_1 [Oisin] ->  echo "The quick brown fox jumps over the lazy dog\n" | wc -w
+Task_2 [Conor] ->  echo "The quick brown fox jumps over the lazy dog\n" | tr “[a-z]” “[A-Z]”
 Task_3 [Conor] ->   curl -o dkit.html https://www.dkit.ie
 
 
