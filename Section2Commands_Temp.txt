@@ -1,1 +1,7 @@
 Task-1 [Oisin] -> while read line; do ./scripts/valhex/build/valhex $line; done < colours.txt
+
+Task-3 [Oisin] -> while read line; do val=`./Scripts/build/valhex $line`; ./Scripts/Scripts/convert-rgba/build/convert-rgba $val; done < colours.txt > rgba-colours.txt
+
+
+*** Task 3 needs sort functionality [conor]
+

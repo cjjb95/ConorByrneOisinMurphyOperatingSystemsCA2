@@ -1,3 +1,5 @@
+// Oisin Murphy - D00191700
+
 #include <stdlib.h>
 #include <stdio.h>
 #include <stdint.h>
