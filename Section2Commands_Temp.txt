@@ -1,0 +1,1 @@
+Task-1 [Oisin] -> while read line; do ./scripts/valhex/build/valhex $line; done < colours.txt
