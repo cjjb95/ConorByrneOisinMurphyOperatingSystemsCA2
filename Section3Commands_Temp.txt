@@ -1,0 +1,3 @@
+Generate and print to the terminal a list (one item per line) of all unique IP addresses in this file. The generated list should notcontain any duplicate entries. 
+
+while read line; do ips=`./scripts/grab-ip/build/grab-ip $line`; done < access.log

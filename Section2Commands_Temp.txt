@@ -1,7 +1,15 @@
-Task-1 [Oisin] -> while read line; do ./scripts/valhex/build/valhex $line; done < colours.txt
+Task-1 [Conor & Oisin] -> ( egrep '^#[0-9A-Fa-f]{6}$' colours.txt && egrep '^#[0-9a-fA-F]{8}$' colours.txt ) | cat
 
-Task-3 [Oisin] -> while read line; do val=`./Scripts/build/valhex $line`; ./Scripts/Scripts/convert-rgba/build/convert-rgba $val; done < colours.txt > rgba-colours.txt
+
+
+
+Task-3 [Oisin] -> while read line; do val=`./scripts/valhex/build/valhex $line`; ./scripts/convert-rgba/build/convert-rgba $val; done < colours.txt > rgba-colours.txt
+
+
+while read line; do val=`./scripts/valhex/build/valhex $line`; ./scripts/convert-rgba/build/convert-rgba $val; done < colours.txt > rgba-colours.txt && ./scripts/sort-rgba/build/sort-rgba rgba-colours.txt
+
 
 
 *** Task 3 needs sort functionality [conor]
 
+#121121FF
