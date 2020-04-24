@@ -12,16 +12,15 @@ void grab_ip() {
         // get index of first ' ' (space) -> that's the end of IP address
         char *space;
         int space_index;
-        space = strchr(line[1], ' ');           // get pointer to first instance of space ' '
-        space_index = (int)(space - line);      // get index of space from 0 in string
+        space = strchr(line, ' ');           // get pointer to first instance of space ' '
+        space_index = (int)(space - line);   // get index of space from 0 in string
 
         //print substring of line -> from start to first space (IP)
-        char *ip[16];                       // ipv4 length -> 15 chars + ending char = 16
+        char ip[16];                        // ipv4 length -> 15 chars + ending char = 16
         memset(ip, '\0', sizeof(ip));       // fill with /0 to avoid issues later
-        strncpy(ip, line[1], space_index);  // copy ip from line
+        strncpy(ip, line, space_index);     // copy ip from line
         printf("%s\n", ip);                 // print out result
     }
-    exit(0);
 }
 
 int main() {

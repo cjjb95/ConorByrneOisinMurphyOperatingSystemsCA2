@@ -38,7 +38,6 @@ void convert_rgba() {
             printf("rgba(%s,%s,%s,%s)\n", ));
         }
     }
-    exit(0);
 }
 
 int main() {
