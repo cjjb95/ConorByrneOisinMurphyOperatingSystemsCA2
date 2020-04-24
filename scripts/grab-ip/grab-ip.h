@@ -1,3 +1,3 @@
 #pragma once
 
-void grab_ip(int, char*[]);
+void grab_ip();

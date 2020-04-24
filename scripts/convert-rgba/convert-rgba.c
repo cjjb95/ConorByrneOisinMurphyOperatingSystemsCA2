@@ -28,14 +28,14 @@ void convert_rgba() {
     char hexcode[10];
     while(fgets(hexcode, 10, stdin)) {
         // convert 6 bit to rgba => append FF to the edn
-        uint8_t len = strlen(hexcode[1]);
+        uint8_t len = strlen(hexcode);
         if(len == 7) {
             // print hex with FF appended
-            printf("rgba(%s,%s,%s,%s)\n", strcat(hexcode[1], "FF"));
+            printf("rgba(%s,%s,%s,%s)\n",  ,"255"));
         }
         else if(len == 9) {
             // print already-rgba hex
-            printf("rgba(%s,%s,%s,%s)\n", strcat(hexcode[1], "FF"));
+            printf("rgba(%s,%s,%s,%s)\n", ));
         }
     }
     exit(0);
