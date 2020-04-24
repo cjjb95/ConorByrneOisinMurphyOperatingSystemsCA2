@@ -1,6 +1,7 @@
-
-
+Task-1 [Conor] -> tail access.log
 
 Task-2 [Oisin] -> cut -d " " -f 1 access.log | sort -n | uniq
+
+Task-3 [Conor & Oisin] -> grep " 404 " access.log | cut -d ' ' -f 3-5
 
 Task-4 [Oisin] -> (grep "Trident/" access.log && grep "MSIE" access.log) > access.ie.log
