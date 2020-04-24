@@ -1,4 +1,6 @@
 
 
 
-Task-2 [Oisin] -> ./scripts/grab-ip/build/grab-ip < access.log | sort -n | uniq
+Task-2 [Oisin] -> cut -d " " -f 1 access.log | sort -n | uniq
+
+Task-4 [Oisin] -> (grep "Trident/" access.log && grep "MSIE" access.log) > access.ie.log
