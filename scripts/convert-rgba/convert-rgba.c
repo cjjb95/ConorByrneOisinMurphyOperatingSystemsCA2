@@ -6,6 +6,7 @@
 #include <string.h>
 #include "./convert-rgba.h"
 
+// old stinky way that I did while misreading the question
 // void convert_rgba(int argc, char *hexcode[]) {
 //     if(argc <= 1) {
 //         //printout here interferes with file inputs -> make a flag to enable / disable??
@@ -24,8 +25,10 @@
 //     exit(0);
 // }
 
+
 void convert_rgba() {
     char hexcode[10];
+    // needs to take input from hex-to-decimal -> needs to be made generic
     while(fgets(hexcode, 10, stdin)) {
         // convert 6 bit to rgba => append FF to the edn
         uint8_t len = strlen(hexcode);
