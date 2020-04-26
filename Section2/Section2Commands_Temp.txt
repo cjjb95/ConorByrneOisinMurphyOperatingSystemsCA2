@@ -3,11 +3,8 @@ Task-1 [Conor & Oisin] -> ( egrep '^#[a-fA-F0-9]{6}$' colours.txt && egrep '^#[a
 Task-2 [Conor] -> (egrep '^#[a-fA-F0-9]{6}$' colours.txt && egrep '^#[a-fA-F0-9]{8}$' colours.txt ) | cat | cut -b 4-5 | ./scripts/covert-hex/build/convert-hex
 
 
+
+*** IGNORE THIS ***
 Task-3 [Oisin] -> while read line; do val=`./scripts/valhex/build/valhex $line`; ./scripts/convert-rgba/build/convert-rgba $val; done < colours.txt > rgba-colours.txt
 
-
-
-
 *** Task 3 needs sort functionality [conor]
-
-#121121FF
