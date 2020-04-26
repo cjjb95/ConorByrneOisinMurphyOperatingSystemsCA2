@@ -34,11 +34,11 @@ void convert_rgba() {
         uint8_t len = strlen(hexcode);
         if(len == 7) {
             // print hex with FF appended
-            printf("rgba(%s,%s,%s,%s)\n",  ,"255"));
+            //printf("rgba(%s,%s,%s,%s)\n",  ,"255"));
         }
         else if(len == 9) {
             // print already-rgba hex
-            printf("rgba(%s,%s,%s,%s)\n", ));
+            //printf("rgba(%s,%s,%s,%s)\n", ));
         }
     }
 
